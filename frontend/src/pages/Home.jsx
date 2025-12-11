@@ -1,7 +1,6 @@
 import React, { useCallback, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
-import { FiLogIn } from "react-icons/fi";
 import {AppContext} from "../context/AppContext"
 
 export const Home = () => {
