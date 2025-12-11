@@ -34,7 +34,6 @@ const Navbar = () => {
           {/* Profile Icon */}
           {userData?.name ? (
             <div
-              onClick={() => navigate("/profile-settings")}
               className="w-10 h-10 bg-blue-800 rounded-full cursor-pointer 
                 text-white text-3xl font-bold flex justify-center items-center"
             >
