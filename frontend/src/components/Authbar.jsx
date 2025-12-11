@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
+import Logo from '../../public/secure-icon.png'
 
 const Authbar = () => {
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Authbar = () => {
             onClick={() => navigate("/")}
             className="flex flex-row justify-center items-center cursor-pointer"
           >
-            <img className="w-14" src={url} alt="" />
+            <img className="w-14" src={Logo} alt="" />
             <h1 className="text-[clamp(1.8rem,3vw,2rem)] font-bold bg-linear-to-bl from-blue-400 to-blue-900 bg-clip-text text-transparent">
               Auth System
             </h1>

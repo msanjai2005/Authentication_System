@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaRegUser } from "react-icons/fa";
 import { AppContext } from "../context/AppContext";
+import Logo from '../../public/secure-icon.png'
 
 const Navbar = () => {
   const navigate = useNavigate();
   const context = useContext(AppContext);
 
-  const url = context?.url;
   const userData = context?.userData;
 
   return (
@@ -22,7 +22,7 @@ const Navbar = () => {
           >
             <img
               className="w-14"
-              src={url || "/logo.png"}     // <-- fallback added
+              src={Logo}
               alt="Taskify logo"
             />
             <h1 className="text-[clamp(1.4rem,3vw,2rem)] font-bold bg-linear-to-bl 

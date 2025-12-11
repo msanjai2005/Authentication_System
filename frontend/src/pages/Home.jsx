@@ -2,6 +2,7 @@ import React, { useCallback, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import {AppContext} from "../context/AppContext"
+import Logo from '../../public/secure-icon.png'
 
 export const Home = () => {
 
@@ -44,7 +45,7 @@ export const Homebar = () => {
             onClick={() => navigate("/") }
             className="flex flex-row justify-center items-center cursor-pointer"
           >
-            <img className="w-14" src={url || "/fallback-logo.png"} alt="logo" />
+            <img className="w-14" src={Logo} alt="logo" />
             <h1 className="text-[clamp(1.8rem,3vw,2rem)] font-bold bg-linear-to-bl from-blue-400 to-blue-900 bg-clip-text text-transparent">
               Auth System
             </h1>
