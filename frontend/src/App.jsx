@@ -110,7 +110,11 @@ const App = () => {
             </RedirectAuthenticatedUser>
           }
         />
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={
+          <RedirectAuthenticatedUser>
+              <Home />
+            </RedirectAuthenticatedUser>
+        } />
 
         {/* Protected routes */}
         <Route element={<Layout />}>
